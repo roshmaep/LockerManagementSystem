@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Locker</title>
+    <link rel="stylesheet" href="lockers.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <span class="back-icon" onclick="goBack()">
+                <img src="images/backarrow-icon.svg" alt="Back">
+            </span>
+            <h2>Select Your Locker</h2>
+        </div>
+
+        <p class="subtitle">Tap a locker to store or retrieve items</p>
+
+        <!-- Status Icons -->
+        <div class="status-bar">
+            <div class="status-item">
+                <img src="images/clock-icon.svg" alt="Last Updated">
+                <span>Last updated: 2 mins ago</span>
+            </div>
+            <div class="status-item">
+                <img src="images/question-icon.svg" alt="How It Works">
+                <span>How It Works</span>
+            </div>
+            <div class="status-item refresh">
+                <img src="images/refresh-icon.svg" alt="Refresh">
+                <span>Refresh</span>
+            </div>
+        </div>
+
+        <!-- Locker Legend -->
+        <div class="legend">
+            <span class="legend-item"><div class="box available"></div> Available</span>
+            <span class="legend-item"><div class="box occupied"></div> Occupied</span>
+            <span class="legend-item"><div class="box reserved"></div> Reserved</span>
+            <span class="legend-item"><div class="box selected"></div> Selected</span>
+        </div>
+
+        <!-- Locker Grid -->
+        <div class="locker-container">
+            <div class="locker-grid">
+               <!-- Row 1 -->
+<div class="locker with-bar" id="S1">S1</div>
+<div class="locker reserved" id="S2">S2<img src="images/redlock-icon.svg" alt="Locker S2"></div>
+<div class="locker with-bar" id="S3">S3</div>
+<div class="locker" id="S4">S4</div>
+<div class="locker with-bar" id="S5">S5<img src="images/redlock-icon.svg" alt="Locker S2"></div>
+
+
+<!-- Row 2 -->
+<div class="locker with-bar" id="S6">S6</div>
+<div class="locker reserved" id="S7">S7</div>
+<div class="locker with-bar" id="S8">S8</div>
+<div class="locker reserved" id="S9">S9</div>
+<div class="locker with-bar" id="S10">S10</div>
+
+<!-- Row 3 -->
+<div class="locker with-bar" id="M1">M1</div>
+<div class="locker reserved" id="M2">M2</div>
+<div class="locker with-bar" id="M3">M3<img src="images/redlock-icon.svg" alt="Locker M3"></div>
+<div class="locker" id="M4">M4</div>
+<div class="locker with-bar" id="M5">M5<img src="images/redlock-icon.svg" alt="Locker m5"></div>
+
+
+            </div>
+
+           <!-- Large Lockers Row -->
+<div class="large-lockers">
+    <div class="locker with-bar" id="L1">L1</div>
+    <div class="locker reserved" id="L2">L2<img src="images/redlock-icon.svg" alt="Locker L2"></div>
+    <div class="locker with-bar" id="L3">L3<img src="images/redlock-icon.svg" alt="Locker L3"></div>
+</div>
+        </div>
+
+        <!-- Info Section with Info Icon -->
+        <div class="info-section">
+            <div class="info-icon">
+                <img src="images/ifoblue-icon.svg" alt="Info">
+            </div>
+            <p>Swipe to view all lockers. Tap a locker to select. Long press for detailed information. Maximum rental duration:24 hours
+                Rates per hour:small -₹165 medium - ₹330 large ₹495
+            </p>
+        </div>
+    </div>
+
+    <script src="locker.js"></script>
+</body>
+</html>

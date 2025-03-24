@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Action</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="back-icon" onclick="goBack()">
+                <img src="images/homepagearrow-icon.svg" alt="Back">
+            </span>
+            <span class="lock-icon">
+                <img src="images/openlocker-icon.svg" alt="Help">
+            </span>
+           
+            <span class="help-icon">
+                <img src="images/question-icon.svg" alt="Help">
+            </span>
+        </div>
+        <span class="title">Smart Space Solutions</span>
+
+        <!--<p id="locationDisplay"></p>-->
+
+        <h2>What Would You Like to do?</h2>
+        
+        <div class="option-card">
+            <div class="item-container">
+                <img src="images/store-icon.svg" alt="Store Icon"> <!-- Store icon from Figma -->
+                <h3>Store Items</h3>
+            </div>
+            <p>Securely store your items in a locker.</p>
+            <button id="storeItemsBtn"  class="btn btn-yellow">Store Items</button>
+        </div>
+        
+        <div class="option-card">
+            <div class="item-container">
+                <img src="images/lock-icon.svg" alt="Retrieve Icon"> <!-- Retrieve icon from Figma -->
+                <h3>Retrieve Items</h3>
+            </div>
+            <p>Retrieve your previously stored items easily.</p>
+            <button id="retrieveItemsBtn" class="btn btn-yellow">Retrieve Items</button>
+        </div>
+    </div>
+
+
+    <script src="second.js"></script>
+</body>
+</html>

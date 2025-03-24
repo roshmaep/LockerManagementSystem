@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Verification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="third.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="back-icon" onclick="goBack()">
+                <img src="images/homepagearrow-icon.svg" alt="Back">
+            </span>
+            <span class="lock-icon">
+                <img src="images/openlocker-icon.svg" alt="Lock">
+            </span>
+            <span class="help-icon">
+                <img src="images/question-icon.svg" alt="Help">
+            </span>
+        </div>
+
+        <span class="title">Smart Space Solutions</span>
+
+        <!-- Three Bars -->
+        <div class="progress-bar">
+            <div class="bar active"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <h2>Verify Your Phone Number</h2>
+        <p>Enter your phone number to receive a verification code</p>
+
+        <!-- Phone Icon -->
+        <div class="phone-icon">
+            <img src="images/phone-icon.svg" alt="Phone Icon">
+        </div>
+
+        <div class="input-container">
+            <input type="tel" id="phoneNumber" placeholder="Enter your phone number">
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+
+        <button id="getOtpBtn" class="btn btn-yellow">Get OTP</button>
+    </div>
+
+    <script src="third.js"></script>
+</body>
+</html>

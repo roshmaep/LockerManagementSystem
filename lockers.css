@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: "Roboto";
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.back-icon {
+    position: absolute;
+    left: 0;
+}
+
+.back-icon img {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.status-item img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+/* Legend */
+.legend {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.available { background: white; border: 1px solid #000; }
+.occupied { background: #D9D9D9; }
+.reserved { background: yellow; }
+.selected { background: #A7C7E7; }
+
+/* Locker Container */
+.locker-container {
+    background: #003366;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 400px; /* Scrollable area */
+}
+
+/* Locker Grid */
+.locker-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 lockers per row */
+    gap: 5px; /* Minimal gap */
+}
+
+/* Lockers */
+.locker {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+}
+
+.locker.reserved {
+    background: yellow;
+}
+
+.locker img {
+    width: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+
+/* Large Lockers Row */
+.large-lockers {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    justify-content: flex-start;
+    width: 150%;
+    white-space: nowrap;
+}
+
+.large-lockers .locker {
+    flex: 1 0 auto;
+    min-width: 80px;
+    height: 60px;
+}
+
+/* Remove gap between large lockers and grid */
+.locker-grid,
+.large-lockers {
+    margin-bottom: 0;
+}
+
+/* Info Section */
+.info-section {
+    background: #f0f0a1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.info-section p {
+    margin: 0;
+    flex: 1;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
+.info-icon img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 35px;
+}
+
+

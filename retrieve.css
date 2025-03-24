@@ -1,0 +1,149 @@
+/* Global Styling */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+    width: 310px;
+    height: 550px;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Icons */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Title */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Welcome Text */
+h2 {
+    margin: 25px;
+    font-size: 22px;
+    font-weight: bold
+}
+
+.subtext {
+    margin-top: 38px;
+    margin-bottom: 36px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Labels */
+.label {
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Container */
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 10px 12px 40px; /* Left padding for icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Input Icon */
+.input-icon {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* OTP Input */
+.otp-container {
+        display: flex;
+        justify-content: left;
+        gap: 25px;
+        margin: 10px 0
+}
+
+.otp-input {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Forgot Passcode */
+.forgot-passcode {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.forgot-passcode a {
+    color: #FFD700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Added space between buttons */
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    background-color: #FFD700;
+    color: black;
+}
+
+.btn-gray {
+    background-color: #ccc;
+    color: black;
+}

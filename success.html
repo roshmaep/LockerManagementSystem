@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="back-icon" onclick="goBack()">
+                <img src="images/homepagearrow-icon.svg" alt="Back">
+            </span>
+            <span class="lock-icon">
+                <img src="images/openlocker-icon.svg" alt="Lock">
+            </span>
+            <span class="help-icon">
+                <img src="images/question-icon.svg" alt="Help">
+            </span>
+        </div>
+
+        <span class="title">Smart Space Solutions</span>
+
+        <!-- Three-Step Progress Bar -->
+        <div class="progress-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar active"></div>
+        </div>
+
+        <h3 class="title">Tell Us About Yourself</h3>
+        <p class="subtitle">We need some basic details to personalize your experience.</p>
+
+        <form id="userForm">
+            <!-- Full Name Field -->
+            <div class="input-group">
+                <img src="images/name-icon.svg" class="input-icon" alt="User Icon">
+                <input type="text" id="fullName" placeholder="Full Name">
+            </div>
+        
+            <!-- Age Field -->
+            <div class="input-group">
+                <img src="images/calender-icon.svg" class="input-icon" alt="Age Icon">
+                <input type="number" id="age" placeholder="Age">
+            </div>
+        
+            <!-- Gender Field -->
+            <p class="label">Gender</p>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+        
+            <!-- Address Field -->
+            <div class="input-group">
+                <img src="images/address-icon.svg" class="input-icon" alt="Address Icon">
+                <input type="text" id="address" placeholder="Address">
+            </div>
+        
+            <!-- Upload Box -->
+            <div class="upload-box">
+                <label for="profilePicture">
+                    <img src="images/profilepicture-icon.svg" alt="Upload Icon">
+                    <p>Upload Profile Picture (Optional)</p>
+                </label>
+                <input type="file" id="profilePicture" accept="image/*">
+                <p class="file-name">No file chosen</p>
+            </div>
+        
+            <!-- Terms & Conditions -->
+            <div class="terms">
+                <input type="checkbox" id="agreeCheckbox">
+                <label for="agreeCheckbox">I agree to the Terms & Conditions</label>
+            </div>
+        
+            <!-- Continue Button Inside Form -->
+            <button id="continueBtn" disabled>Continue</button>
+        </form>
+            </div>
+
+    <script src="success.js"></script>
+</body>
+</html>

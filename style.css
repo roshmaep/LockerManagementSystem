@@ -1,0 +1,90 @@
+:root {
+    --yellow-color: #FFD700;
+    --dark-blue-color: #0D355E;
+    --lightgray-color: #F5F5F5;
+    --gray-color:#D9D9D9;
+    --lightorange-color: #FFFF55;
+    --white-color:#FFFFFF;
+    --avialble-color:#DDEAF8;
+    --occupide-color:#D3D3D3;
+    --resevered-color:#FFF5CC;
+    --selected-color:#A7C7E7;
+    --lightgreen-color:#E2FFF4;
+  }
+
+/* General Styling */
+body {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 310px;
+    height: 550px;
+    position: relative;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.icon-btn {
+    width: 24px; /* Adjust size based on actual icon size */
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Title Styling */
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Location Icon */
+.location-icon img {
+    width: 50px;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #000000;
+    
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #FFFFFF;
+}
+.btn:hover {
+    background-color:yellow ;
+}
+
+.btn:active {
+    background-color: yellow;
+}
+
+.btn-primary {
+    background: #FFFFFF;
+    color: rgb(20, 17, 17);
+}

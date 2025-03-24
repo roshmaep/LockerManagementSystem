@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locker Unavailable</title>
+  <link rel="stylesheet" href="locker-unavailable.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <img src="images/Group 9.svg" alt="Smart Space" class="logo" />
+      <div>
+        <h1>Smart Space</h1>
+        <p>Solutions</p>
+      </div>
+    </div>
+    <hr style="width: 100%;text-align:left;margin-left:0">
+
+    <!-- Locker Unavailable Section -->
+    <h2>Locker Unavailable</h2>
+
+    <div class="locker-info">
+      <img src="images/locker24-icon.svg" alt="Lock Icon" />
+      <h3>Locker #12</h3>
+      <span class="status in-use">In Use</span>
+    </div>
+
+    <!-- Time Info -->
+    <div class="time-info">
+
+      <div class="time-remaining">
+        <img src="images/yellowclock-icon.svg" alt="Clock Icon" />
+        <span>2 hours, 15 minutes</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
+      <!--<p id="accessTime" style="display: none; color: #333; font-size: 14px; margin-left: 38px;"></p>-->
+
+      <p class="last-accessed">Last accessed: 30 minutes ago</p>
+    </div>
+
+    <!-- Unavailable Message -->
+    <div class="unavailable-message">
+      <img src="images/blackinfo.svg" alt="Info Icon" />
+      <div>
+        <h4>Currently Unavailable</h4>
+        <p class="available-para">This locker is being used by another customer. You can enable notifications to be alerted when it becomes available.</p>
+      </div>
+    </div>
+
+    <!-- Action Buttons with Icons -->
+    <button class="notify-btn" onclick="notifyUser()">
+      <img src="images/bell-icon.svg" alt="Bell Icon" class="icon" />
+      Notify When Available
+    </button>
+    <button class="go-back-btn" onclick="goBack()">
+      <img src="images/goback-icon.svg" alt="Back Icon" class="icon" />
+      GO Back
+    </button>
+  </div>
+
+  <script src="locker-unavailable.js"></script>
+</body>
+</html>

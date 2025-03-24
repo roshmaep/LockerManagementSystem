@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="retrieve.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Icons -->
+        <div class="header">
+            <span class="back-icon" onclick="goBack()">
+                <img src="images/homepagearrow-icon.svg" alt="Back">
+            </span>
+            <span class="lock-icon">
+                <img src="images/openlocker-icon.svg" alt="Lock">
+            </span>
+            <span class="help-icon">
+                <img src="images/question-icon.svg" alt="Help">
+            </span>
+        </div>
+
+        <!-- Title -->
+        <span class="title">Smart Space Solutions</span>
+        
+        <!-- Welcome Text -->
+        <h2>Welcome Back</h2>
+        <p class="subtext">Securely log into your account</p>
+
+        <!-- Phone Input -->
+        <div class="input-container">
+            <label class="label">Enter your phone number:</label>
+            <div class="input-group">
+                <img src="images/grayphone-icon.svg" class="input-icon" alt="Phone Icon">
+                <input type="tel" id="phoneNumber" placeholder="Enter your phone number">
+            </div>
+        </div>
+
+        <!-- OTP Input Fields -->
+        <label class="label">Enter your 4-digit passcode</label>
+        <div class="otp-container">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+        </div>
+
+        <!-- Forgot Passcode -->
+        <p class="forgot-passcode">
+            <a href="#" id="forgotPasscode">Forgot Passcode?</a>
+        </p>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button id="verifyOtpBtn" class="btn btn-yellow">Log In</button>
+            <button id="cancelBtn" class="btn btn-gray">Cancel</button>
+        </div>
+    </div>
+
+    <script src="retrieve.js"></script>
+</body>
+</html>

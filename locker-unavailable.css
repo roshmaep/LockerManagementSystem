@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 310px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-left: 48px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  .last-accessed {
+    margin-left: 38px;
+    margin-top: 9px;
+    color: black;
+  }
+  
+  /* Locker Info */
+  h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+  }
+  
+  .locker-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .locker-info img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .status {
+    background-color: #e0f7e9;
+    color: #2c7c4f;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-left: 124px;
+  }
+  
+  /* Time Info */
+  .time-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .time-remaining {
+    display: flex;
+    align-items: center;
+  }
+  
+  .time-remaining img {
+    width: 27px;
+    margin-right: 8px;
+    margin-left: 3px;
+  }
+  span {
+    font-weight: bold;
+    margin-left: 13px;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+    margin-top: 10px;
+    width: 210px;
+    margin-left: 40px;
+  }
+  
+  .progress {
+    background-color: #f7c21c;
+    height: 100%;
+  }
+  
+  /* Unavailable Message */
+  .unavailable-message {
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .unavailable-message img {
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 57px;
+  }
+  
+  h4 {
+    margin: 0;
+    font-size: 16px;
+    margin-left: 12px;
+  }
+  
+  /* Buttons with Icons */
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Notify Button */
+  .notify-btn {
+    background-color: #f7c21c;
+    color: black;
+  }
+  
+  /* Go Back Button */
+  .go-back-btn {
+    background-color: #D9D9D9;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  

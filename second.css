@@ -1,0 +1,100 @@
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 310px;
+    height: 550px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header .back-icon img,
+.header .help-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    
+}
+h3,p{
+    text-align: center;
+}
+
+.option-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.option-card .icon img {
+    width: 30px;
+    height: 40px;
+}
+
+.option-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.option-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.item-container {
+    display: flex;
+    align-items: center; /* Align icon and text in the same line */
+    gap: 10px; /* Add spacing between icon and text */
+}
+
+.item-container img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-yellow {
+    background: #FFD700;
+    color: #000;
+}
+
+.btn-yellow:hover {
+    background: #FFC107;
+}

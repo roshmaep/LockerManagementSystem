@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="openlocker.css" />
+  <title>Locker Access</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="header">
+      <img src="images/Group 9.svg" alt="Smart Space" class="logo" />
+      <div>
+        <h1>Smart Space</h1>
+        <p>Solutions</p>
+      </div>
+    </div>
+
+    <!-- Locker Info Section -->
+    <div class="locker-info">
+      <div class="locker-header">
+        <span class="locker-icon">
+          <img src="images/locker24-icon.svg" alt="Locker">
+        </span>
+        <div class="locker-details">
+          <h3>Locker #24</h3>
+          <span class="status in-use">In Use</span>
+        </div>
+      </div>
+      <p class="time-remaining">Time Remaining: <b>4 hours</b></p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <!-- Buttons Section -->
+    <button class="btn btn-yellow" id="openLockerBtn">
+      <img src="images/openlocker-icon.svg" alt="Open Locker" class="icon" />
+      Open Locker (Temporary Access)
+    </button>
+    <button class="btn btn-yellow" id="retrieveItemsBtn">
+      <img src="images/retreive-icon.svg" alt="Retrieve Items" class="icon" />
+      Retrieve Items
+    </button>
+    <button class="btn btn-gray" id="cancelBtn">Cancel</button>
+
+    <!-- Important Info Section -->
+    <div class="info-box">
+      <h4>
+        <img src="images/info-icon.svg" alt="Info" class="info-icon" />
+        Important Information
+      </h4>
+      <ul>
+        <li>Opening the locker temporarily will cost a small fee.</li>
+        <li>Retrieving your items will release the locker for others to use.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="openlocker.js"></script>
+</body>
+</html>

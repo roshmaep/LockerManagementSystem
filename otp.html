@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="back-icon" onclick="goBack()">
+                <img src="images/homepagearrow-icon.svg" alt="Back">
+            </span>
+            <span class="lock-icon">
+                <img src="images/openlocker-icon.svg" alt="Lock">
+            </span>
+            <span class="help-icon">
+                <img src="images/question-icon.svg" alt="Help">
+            </span>
+        </div>
+
+        <span class="title">Smart Space Solutions</span>
+
+        <!-- Three-Step Progress Bar -->
+        <div class="progress-bar">
+            <div class="bar"></div>
+            <div class="bar active"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Lock Icon -->
+        <div class="lock-icons">
+            <img src="images/largelock-icon.svg" alt="Lock">
+        </div>
+
+        <h2>Enter the OTP</h2>
+        <p>A 6-digit code has been sent to your number</p>
+
+        <!-- OTP Input Fields -->
+        <div class="otp-container">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+        </div>
+
+        <button id="verifyOtpBtn" class="btn btn-yellow">Verify OTP</button>
+
+        <!-- Resend OTP -->
+        <p class="resend-text">
+            Resend code in <span id="timer">16</span> seconds
+        </p>
+
+        <!-- Change Number -->
+        <p class="change-number">
+            Wrong phone number?<a href="#" id="changeNumber">Change number</a></p>
+    </div>
+
+    <script src="otp.js"></script>
+</body>
+</html>
